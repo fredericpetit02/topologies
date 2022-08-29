@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" modified="2022-08-29T07:59:23.866Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="NOV0LwUy4mhR6wLbmX2G" version="20.2.7" type="github">
+  <diagram id="c1vpiwzESB1dzEV3vZ-N" name="Page-1">
+    <mxGraphModel dx="1368" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WauuGMM3AFpZdYQ_yjTY-3" value="&lt;b&gt;firewall (pfSense)&lt;br&gt;&lt;br&gt;WAN (dhcp dynamique VmWare)&lt;/b&gt; : IP 172.16.26.129/24 | GW 172.16.26.2 | DNS 172.126.16.2&lt;br&gt;&lt;b&gt;LAN (self netfwork fixe)&lt;/b&gt; : IP 192.168.1.1 | GW 192.168.1.1 | DNS 127.0.0.1, 192.168.1.2,&amp;nbsp;80.67.169.12" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/firewall.svg;" parent="1" vertex="1">
+          <mxGeometry x="377.4" y="160" width="73.2" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WauuGMM3AFpZdYQ_yjTY-4" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/internet_cloud.svg;imageBackground=none;" parent="1" vertex="1">
+          <mxGeometry x="350" y="40" width="126.99" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WauuGMM3AFpZdYQ_yjTY-5" value="&lt;b&gt;srv-global (active directory)&lt;br&gt;&lt;br&gt;WAN (dhcp dynamique VmWare)&lt;br&gt;&lt;/b&gt;IP 172.16.26.132/24&lt;br&gt;GW 172.16.26.2&lt;br&gt;DNS 172.16.26.2&lt;br&gt;&lt;br&gt;&lt;b&gt;LAN&amp;nbsp;(dhcp fixe pfSense)&lt;br&gt;&lt;/b&gt;IP 192.168.1.2&lt;br&gt;GW 192.168.1.1&lt;br&gt;DNS 192.168.1.1" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/windows_server_2.svg;" parent="1" vertex="1">
+          <mxGeometry x="366" y="400" width="96" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WauuGMM3AFpZdYQ_yjTY-6" value="&lt;b&gt;clt-global-win1 (client windows)&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;LAN (dhcp dynamique pfSense)&lt;br&gt;&lt;/b&gt;IP 192.168.1.51&lt;br&gt;GW 192.168.1.1&lt;br&gt;DNS 192.168.1.1" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/laptop_client.svg;" parent="1" vertex="1">
+          <mxGeometry x="640" y="400" width="108" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WauuGMM3AFpZdYQ_yjTY-7" value="&lt;b&gt;clt-global-lin1 (client linux)&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;LAN (dhcp dynamique pfSense)&lt;br&gt;&lt;/b&gt;IP 192.168.1.50&lt;br&gt;GW 192.168.1.1&lt;br&gt;DNS 192.168.1.1" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/laptop_client.svg;" parent="1" vertex="1">
+          <mxGeometry x="90" y="400" width="108" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WauuGMM3AFpZdYQ_yjTY-10" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="410" as="sourcePoint" />
+            <mxPoint x="410" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WauuGMM3AFpZdYQ_yjTY-14" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="WauuGMM3AFpZdYQ_yjTY-4" target="WauuGMM3AFpZdYQ_yjTY-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="330" as="sourcePoint" />
+            <mxPoint x="440" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WauuGMM3AFpZdYQ_yjTY-15" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/internet_cloud.svg;" parent="1" vertex="1">
+          <mxGeometry x="440" y="400" width="47.62" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aLyq0cBy62xlvmTvrrk3-4" value="" style="html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.vpn;fillColor=#007AFF;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;" parent="1" vertex="1">
+          <mxGeometry x="200" y="400" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aLyq0cBy62xlvmTvrrk3-5" value="" style="html=1;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.misc.vpn;fillColor=#007AFF;strokeColor=none;buttonText=;strokeColor2=#222222;fontColor=#222222;fontSize=8;verticalLabelPosition=bottom;verticalAlign=top;align=center;sketch=0;" parent="1" vertex="1">
+          <mxGeometry x="600" y="400" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aLyq0cBy62xlvmTvrrk3-9" value="" style="endArrow=none;html=1;rounded=0;fillColor=#e51400;strokeColor=#B20000;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="WauuGMM3AFpZdYQ_yjTY-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="380" as="sourcePoint" />
+            <mxPoint x="410" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aLyq0cBy62xlvmTvrrk3-10" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#e51400;strokeColor=#B20000;" parent="1" target="WauuGMM3AFpZdYQ_yjTY-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="360" as="sourcePoint" />
+            <mxPoint x="440" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
